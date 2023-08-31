@@ -1,0 +1,45 @@
+{
+  "Node": {
+    "#class": "Application",
+    "type": "object",
+    "property": [
+      {
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "name": "host",
+        "type": "string"
+      },
+      {
+        "name": "keyboard",
+        "type": "string"
+      },
+      {
+        "name": "uuid",
+        "type": "uuid"
+      },
+      {
+        "name": "#class",
+        "type": "string"
+      }
+    ]
+  },
+  "sort": [
+    "name",
+    "host, name"
+  ],
+  "is.unique": [
+    "host, name"
+  ],
+  "sync" : {
+    "interval": 60
+  },
+  "relation": [
+    {
+      "type": "one-one",
+      "class": "Host",
+      "attribute": "host"
+    }
+  ]
+}

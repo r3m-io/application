@@ -1,0 +1,102 @@
+{
+    "Application": {
+        "sync": {
+            "expose": [
+                {
+                    "role": "ROLE_SYSTEM",
+                    "attributes": [
+                        "uuid",
+                        "name",
+                        "host",
+                        "keyboard",
+                        "#class"
+                    ]
+                }
+            ]
+        },
+        "list": {
+            "expose": [
+                {
+                    "role": "ROLE_SYSTEM",
+                    "attributes": [
+                        "uuid",
+                        "name",
+                        "host",
+                        "keyboard",
+                        "#class"
+                    ]
+                }
+            ]
+        },
+        "read": {
+            "expose": [
+                {
+                    "role": "ROLE_SYSTEM",
+                    "attributes": [
+                        "uuid",
+                        "name",
+                        "host",
+                        "keyboard",
+                        "#class"
+                    ]
+                }
+            ]
+        },
+        "record": {
+            "expose": [
+                {
+                    "role": "ROLE_SYSTEM",
+                    "attributes": [
+                        "uuid",
+                        "name",
+                        "host",
+                        "keyboard",
+                        "#class"
+                    ]
+                }
+            ]
+        },
+        "create": {
+            "expose": [
+                {
+                    "role": "ROLE_SYSTEM",
+                    "attributes": [
+                        "uuid",
+                        "name",
+                        "host",
+                        "keyboard",
+                        "#class"
+                    ]
+                }
+            ]
+        },
+        "put": {
+            "expose": [
+                {
+                    "role": "ROLE_SYSTEM",
+                    "attributes": [
+                        "uuid",
+                        "name",
+                        "host",
+                        "keyboard",
+                        "#class"
+                    ]
+                }
+            ]
+        },
+        "patch": {
+            "expose": [
+                {
+                    "role": "ROLE_SYSTEM",
+                    "attributes": [
+                        "uuid",
+                        "name",
+                        "host",
+                        "keyboard",
+                        "#class"
+                    ]
+                }
+            ]
+        }
+    }
+}

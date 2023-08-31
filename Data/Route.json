@@ -1,0 +1,10 @@
+{
+  "r3m_io-application-cli": {
+    "path": "r3m_io\/application",
+    "controller": "Package.R3m.Io.Application.Controller.Cli.run",
+    "language": "en",
+    "method": [
+      "CLI"
+    ]
+  }
+}
