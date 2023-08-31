@@ -1,5 +1,5 @@
 <?php
-namespace Package\R3m\Io\Host\Controller;
+namespace Package\R3m\Io\Application\Controller;
 
 use Exception;
 use R3m\Io\App;
@@ -16,8 +16,8 @@ class Cli extends Controller {
     const DIR = __DIR__ . '/';
     const MODULE_INFO = 'info';
     const INFO = [
-        '{{binary()}} r3m_io/host                    | Host (Object store) options',
-        '{{binary()}} r3m_io/host setup              | Host setup'
+        '{{binary()}} r3m_io/application             | Application (Object store) options',
+        '{{binary()}} r3m_io/application setup       | Application setup'
     ];
 
     /**
