@@ -41,6 +41,12 @@ trait Keyboard {
         $options['limit'] = 4096;
         $page_max = ceil($count / $options['limit']);
         $result = [];
+        $options['where'] = [];
+        $options['where'][] = [
+            'attribute' => 'application.uuid',
+            'value' => $application->get('uuid'),
+            'operator' => '==='
+        ];
         for($page = 1; $page <= $page_max; $page++){
             $options['page'] = $page;
             d($options);
