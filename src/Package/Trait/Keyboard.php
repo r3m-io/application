@@ -31,10 +31,9 @@ trait Keyboard {
         $options['sort']['uuid'] = 'ASC';
         $options['where'] = [];
         $options['where'][] = [
-            'application' => [
-                'value' => $application->get('uuid'),
-                'operator' => '==='
-            ]
+            'attribute' => 'uuid',
+            'value' => $application->get('uuid'),
+            'operator' => '==='
         ];
         d($role);
         d($options);
