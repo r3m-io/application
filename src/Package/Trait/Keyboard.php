@@ -15,10 +15,8 @@ trait Keyboard {
         $object = $this->object();
         $node = new Node($object);
         $class = 'Keyboard';
-        $role = $application->get('#role');
+        $role = $application->get('#rootNode.#role');
         if(empty($role)){
-            d($application->get('#rootNode.#role'));
-            d($application);
             throw new Exception('Role is missing');
         }
         $options = [];
