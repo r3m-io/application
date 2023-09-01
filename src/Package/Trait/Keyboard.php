@@ -44,8 +44,9 @@ trait Keyboard {
         for($page = 1; $page <= $page_max; $page++){
             $options['page'] = $page;
             $response = $node->list($class, $role, $options);
-            $result = array_merge($result, $response['list']);
-            d($response);
+            foreach($response['list'] as $record){
+                $result[] = $record;
+            }
         }
         ddd($result);
     }
