@@ -1,6 +1,8 @@
 <?php
 namespace Package\R3m\Io\Application\Trait;
 
+use R3m\Io\Exception\FileWriteException;
+use R3m\Io\Exception\ObjectException;
 use R3m\Io\Module\Data as Storage;
 
 use R3m\Io\Node\Model\Node;
@@ -10,6 +12,11 @@ use Exception;
 trait Keyboard {
 
 
+    /**
+     * @throws ObjectException
+     * @throws FileWriteException
+     * @throws Exception
+     */
     public function list($application){
         $application = new Storage($application);
         $object = $this->object();
