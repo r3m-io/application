@@ -24,18 +24,7 @@
                         "host",
                         "keyboard",
                         "#class"
-                    ],
-                    "objects": {
-                        "keyboard": {
-                            "multiple": true,
-                            "expose": [
-                                "uuid",
-                                "command",
-                                "function",
-                                "#class"
-                            ]
-                        }
-                    }
+                    ]
                 }
             ]
         },
@@ -49,7 +38,18 @@
                         "host",
                         "keyboard",
                         "#class"
-                    ]
+                    ],
+                    "objects": {
+                        "keyboard": {
+                            "multiple": true,
+                            "expose": [
+                                "uuid",
+                                "command",
+                                "function",
+                                "#class"
+                            ]
+                        }
+                    }
                 }
             ]
         },
