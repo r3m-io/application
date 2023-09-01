@@ -48,6 +48,7 @@ trait Keyboard {
             'value' => $application->get('uuid'),
             'operator' => '==='
         ];
+        $options['relation'] = false;
         for($page = 1; $page <= $page_max; $page++){
             $options['page'] = $page;
             $response = $node->list($class, $role, $options);
