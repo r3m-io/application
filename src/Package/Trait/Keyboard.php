@@ -14,6 +14,7 @@ trait Keyboard {
         $class = 'Keyboard';
         $role = $application->get('#role');
         if(empty($role)){
+            d($application->get('#rootNode.#role'));
             d($application);
             throw new Exception('Role is missing');
         }
