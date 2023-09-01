@@ -2,7 +2,10 @@
 namespace Package\R3m\Io\Application\Trait;
 
 use R3m\Io\Module\Data as Storage;
+
 use R3m\Io\Node\Model\Node;
+
+use Exception;
 
 trait Keyboard {
 
