@@ -52,6 +52,7 @@ trait Keyboard {
         for($page = 1; $page <= $page_max; $page++){
             $options['page'] = $page;
             $response = $node->list($class, $role, $options);
+            ddd($response);
             if(
                 array_key_exists('list', $response) &&
                 is_array($response['list'])
