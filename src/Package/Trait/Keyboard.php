@@ -23,13 +23,6 @@ trait Keyboard {
                 'operator' => '==='
             ]
         ];
-        $options['where'][] = 'and';
-        $options['where'][] = [
-            'host' => [
-                'value' => $application->get('host.uuid'),
-                'operator' => '==='
-            ]
-        ];
         d($options);
         $count = $node->count($class, $role, $options);
         ddd($count);
