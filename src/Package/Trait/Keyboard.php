@@ -31,11 +31,10 @@ trait Keyboard {
         $options['sort']['uuid'] = 'ASC';
         $options['where'] = [];
         $options['where'][] = [
-            'attribute' => 'uuid',
+            'attribute' => 'application',
             'value' => $application->get('uuid'),
             'operator' => '==='
         ];
-        d($role);
         d($options);
         $count = $node->count($class, $role, $options);
         ddd($count);
