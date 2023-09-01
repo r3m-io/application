@@ -37,17 +37,17 @@ trait Keyboard {
         ];
         d($options);
         $count = $node->count($class, $role, $options);
-        ddd($count);
-        $response = $node->list($class, $role, $options);
-
-
-        d($response);
-//        $count =
-
-
-
-
-        ddd($application);
+        d($count);
+        $options['limit'] = 4096;
+        $page_max = ceil($count / $options['limit']);
+        $result = [];
+        for($page = 1; $page <= $page_max; $page++){
+            $options['page'] = $page;
+            $response = $node->list($class, $role, $options);
+            $result = array_merge($result, $response['list']);
+            d($response);
+        }
+        ddd($result);
     }
 
 }
