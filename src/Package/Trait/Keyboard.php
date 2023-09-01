@@ -35,9 +35,10 @@ trait Keyboard {
             'value' => $application->get('uuid'),
             'operator' => '==='
         ];
-        d($options);
         $count = $node->count($class, $role, $options);
-        d($count);
+        if($count === 0){
+            return [];
+        }
         $options['limit'] = 4096;
         $page_max = ceil($count / $options['limit']);
         $result = [];
@@ -49,9 +50,7 @@ trait Keyboard {
         ];
         for($page = 1; $page <= $page_max; $page++){
             $options['page'] = $page;
-            d($options);
             $response = $node->list($class, $role, $options);
-            d($response);
             if(
                 array_key_exists('list', $response) &&
                 is_array($response['list'])
@@ -61,7 +60,7 @@ trait Keyboard {
                 }
             }
         }
-        ddd($result);
+        return $result;
     }
 
 }
