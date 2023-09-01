@@ -13,6 +13,10 @@ trait Keyboard {
         $node = new Node($object);
         $class = 'Keyboard';
         $role = $application->get('#role');
+        if(empty($role)){
+            d($application);
+            throw new Exception('Role is missing');
+        }
         $options = [];
         $options['sort'] = [];
         $options['sort']['uuid'] = 'ASC';
