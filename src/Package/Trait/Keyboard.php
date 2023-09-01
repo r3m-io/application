@@ -30,6 +30,7 @@ trait Keyboard {
                 'operator' => '==='
             ]
         ];
+        d($options);
         $count = $node->count($class, $role, $options);
         ddd($count);
         $response = $node->list($class, $role, $options);
