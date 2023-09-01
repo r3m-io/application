@@ -23,6 +23,7 @@ trait Keyboard {
                 'operator' => '==='
             ]
         ];
+        d($role);
         d($options);
         $count = $node->count($class, $role, $options);
         ddd($count);
