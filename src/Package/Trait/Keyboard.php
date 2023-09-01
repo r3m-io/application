@@ -44,7 +44,7 @@ trait Keyboard {
         $result = [];
         $options['where'] = [];
         $options['where'][] = [
-            'attribute' => 'application.uuid',
+            'attribute' => 'application',
             'value' => $application->get('uuid'),
             'operator' => '==='
         ];
